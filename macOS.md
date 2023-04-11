@@ -8,6 +8,7 @@
 
 1 :- Open Terminal then install 
 
+Press Command + Space Bar on your Mac keyboard (alternatively, press F4) Type in “Terminal”
 
 ```
 brew install putty
