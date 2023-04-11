@@ -11,6 +11,10 @@
 Press Command + Space Bar on your Mac keyboard (alternatively, press F4) Type in “Terminal”
 
 ```
+Terminal
+```
+
+```
 brew install putty
 ```
 OR
