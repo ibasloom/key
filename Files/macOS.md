@@ -44,7 +44,7 @@ Use "puttygen --help" for more detail.
 ```
 
 
-![How to create AWS Ec2 Instance](https://github.com/ibasloom/key/blob/main/Files/Create-AWS-Instance.md)
+[How to create AWS Ec2 Instance](https://github.com/ibasloom/key/blob/main/Files/Create-AWS-Instance.md)
 
 
 ### Step 3
