@@ -54,8 +54,15 @@ Use "puttygen --help" for more detail.
 1:- we will convert .pem to .ppk
 
 ```
-puttygen key.ppk -O private-openssh -o key.pem
+puttygen ichaush3.pem -o ichaush3.ppk
 ```
+
+.ppk to .pem
+
+```
+puttygen key.ppk -O private-openssh -o key.pem
+``` 
+
 -O capital 
 
 -o small
