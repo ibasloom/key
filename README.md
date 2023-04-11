@@ -1,4 +1,7 @@
-# key convert .pem to .ppk on macos | Convert a putty .ppk key to an Amazon .pem file on OSX
+# key convert .pem to .ppk  |  .ppk to .pem | On macOS / Windows 
+
+
+In this tutorial we are using [AWS](https://signin.aws.amazon.com/) cloud if your on mac click on macOS else Windows
 
 --------------
 
