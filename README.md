@@ -5,8 +5,8 @@ In this tutorial we are using [AWS](https://signin.aws.amazon.com/) cloud if you
 
 --------------
 
-1 :- [macOS](https://github.com/ibasloom/key/blob/main/macOS.md)
+1 :- [macOS](https://github.com/ibasloom/key/blob/main/Files/macOS.md)
 
-2 :- [Windows](https://github.com/ibasloom/key/blob/main/Windows.md)
+2 :- [Windows](https://github.com/ibasloom/key/blob/main/Files/Windows.md)
 
 --------------
