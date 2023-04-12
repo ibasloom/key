@@ -84,8 +84,11 @@ chmod 400 <private-key-filename>.pem
 puttygen RedHat-Server-2.ppk -O private-openssh -o RedHat-Server-2.pem
 ```
 
+[Link Imran Chaush ](https://stackoverflow.com/questions/46008595/trying-to-use-puttygen-on-mac/75991667#75991667)
 [Link stackoverflow ](https://stackoverflow.com/questions/37286791/convert-pem-to-ppk-on-macos)
 
 [Link codeblocq ](https://www.codeblocq.com/2016/05/Convert-a-putty-ppk-key-to-a-pem-file-on-OSX/)
+
+
 
 Both MacPorts and Homebrew are useful tools for managing software on a Mac, and they offer different sets of software packages and libraries. Users can choose which package management system to use based on their needs and preferences
