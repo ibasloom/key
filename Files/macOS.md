@@ -1,95 +1,41 @@
-# Converting .ppk to .pem files on macOS and .pem to .ppk
+# convert .pem 2 .ppk | .ppk 2 .pem | macOS
 
-## Steps For macOS .ppk to .pem
+## To convert a .pem file to a .ppk file on macOS, you can use the "puttygen" utility which is part of the PuTTY package. Here are the steps to follow:
 
-### Step 1
+### Step 1: Install PuTTY on your Mac using either of the following commands in Terminal:
+------------
 
------------
-
-1 :- Open Terminal then install 
-
-Press Command + Space Bar on your Mac keyboard (alternatively, press F4) Type in “Terminal”
-
-```
-Terminal
-```
+Using Homebrew:
 
 ```
 brew install putty
 ```
-OR
 
+Using MacPorts:
 
 ```
 sudo port install putty
 ```
 
-### Step 2
-
------------
-
-1:- in terminal type puttygen
-```
-puttygen
-```
-
-output look like same 
+### Step 2: Open Terminal and navigate to the directory where your .pem file is located. Then, run the following command to convert the .pem file to .ppk format:
+------------
 
 ```
-imranchaush@Imrans-MacBook-Air key % puttygen
-Usage: puttygen ( keyfile | -t type [ -b bits ] )
-                [ -C comment ] [ -P ] [ -q ]
-                [ -o output-keyfile ] [ -O type | -l | -L | -p ]
-Use "puttygen --help" for more detail.
+puttygen your_key.pem -o your_key.ppk
 ```
 
+This command will create a new .ppk file in the same directory as your .pem file. You can now use the .ppk file to connect to your server using SSH.
 
-[How to create AWS Ec2 Instance](https://github.com/ibasloom/key/blob/main/Files/Create-AWS-Instance.md)
-
-
-### Step 3
-
------------
-
-1:- we will convert .pem to .ppk
+If you need to convert a .ppk file back to .pem format, you can use the following command:
 
 ```
-puttygen ichaush3.pem -o ichaush3.ppk
+puttygen your_key.ppk -O private-openssh -o your_key.pem
 ```
 
-.ppk to .pem
+Note that you may need to change the file permissions on your key file using the "chmod" command before you can use it to connect to your server. To do this, run the following command:
 
 ```
-puttygen key.ppk -O private-openssh -o key.pem
-``` 
-
--O capital 
-
--o small
-
-Try to login if not work follow bellow step change file permission
-
-```
-chmod go-rw privatekey.pem
+chmod 400 your_key.pem
 ```
 
-```
-chmod 400 <private-key-filename>.pem
-```
-
-
-## Steps For macOS .ppk to .pem
-
-```
-puttygen RedHat-Server-2.ppk -O private-openssh -o RedHat-Server-2.pem
-```
-
-[Link Imran Chaush ](https://stackoverflow.com/questions/46008595/trying-to-use-puttygen-on-mac/75991667#75991667)
-
-[Link stackoverflow ](https://stackoverflow.com/questions/37286791/convert-pem-to-ppk-on-macos)
-
-[Link codeblocq ](https://www.codeblocq.com/2016/05/Convert-a-putty-ppk-key-to-a-pem-file-on-OSX/)
-
-
-
-Both MacPorts and Homebrew are useful tools for managing software on a Mac, and they offer different sets of software packages and libraries. Users can choose which package management system to use based on their needs and preferences
+That's it! You should now be able to connect to your server using your converted key file.
