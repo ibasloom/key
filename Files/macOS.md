@@ -81,7 +81,7 @@ chmod 400 <private-key-filename>.pem
 ## Steps For macOS .ppk to .pem
 
 ```
-sudo puttygen RedHat-Server-2.ppk -O private-openssh -o RedHat-Server-2.pem
+puttygen RedHat-Server-2.ppk -O private-openssh -o RedHat-Server-2.pem
 ```
 
 [Link stackoverflow ](https://stackoverflow.com/questions/37286791/convert-pem-to-ppk-on-macos)
